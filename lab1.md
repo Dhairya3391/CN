@@ -1,6 +1,14 @@
-# Network Commands Reference Guide
+# Lab Practical #01: Network Commands Reference Guide
 
-This document shows common network commands used in Windows and their macOS equivalents, along with real output examples.
+**Student Name:** Dhairya Adroja  
+**Enrollment No:** 24010101602  
+**Course:** B.Tech. CSE
+
+---
+
+## Objective
+
+To study and practice various network commands used in different operating systems, particularly focusing on Windows commands and their macOS equivalents, with practical output examples.
 
 ## 1. IP Configuration (ipconfig → ifconfig)
 
@@ -8,22 +16,24 @@ This document shows common network commands used in Windows and their macOS equi
 **macOS Equivalent:** `ifconfig`
 
 ### Usage:
+
 ```bash
 ifconfig
 ```
 
 ### Output:
+
 ```
 lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
 	options=1203<RXCSUM,TXCSUM,TXSTATUS,SW_TIMESTAMP>
 	inet 127.0.0.1 netmask 0xff000000
-	inet6 ::1 prefixlen 128 
-	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+	inet6 ::1 prefixlen 128
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1
 	nd6 options=201<PERFORMNUD,DAD>
 en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
 	ether 74:0e:a4:8d:42:2b
-	inet6 fe80::8c5:cf0f:3f4e:bf58%en0 prefixlen 64 secured scopeid 0xb 
+	inet6 fe80::8c5:cf0f:3f4e:bf58%en0 prefixlen 64 secured scopeid 0xb
 	inet 10.20.64.246 netmask 0xffff0000 broadcast 10.20.255.255
 	nd6 options=201<PERFORMNUD,DAD>
 	media: autoselect
@@ -38,11 +48,13 @@ en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 **macOS Equivalent:** `ping -c 4 google.com` (with count limit)
 
 ### Usage:
+
 ```bash
 ping -c 4 google.com
 ```
 
 ### Output:
+
 ```
 PING google.com (142.250.192.110): 56 data bytes
 64 bytes from 142.250.192.110: icmp_seq=0 ttl=116 time=29.658 ms
@@ -63,21 +75,25 @@ round-trip min/avg/max/stddev = 25.818/30.972/42.051/6.563 ms
 **macOS Equivalent:** `ifconfig en0 | grep ether` or `ifconfig | grep ether`
 
 ### Usage:
+
 ```bash
 ifconfig en0 | grep ether
 ```
 
 ### Output:
+
 ```
 	ether 74:0e:a4:8d:42:2b
 ```
 
 ### Alternative - All MAC addresses:
+
 ```bash
 ifconfig | grep ether
 ```
 
 ### Output:
+
 ```
 	ether 32:a8:16:5c:a8:81
 	ether 32:a8:16:5c:a8:80
@@ -100,11 +116,13 @@ ifconfig | grep ether
 **macOS Equivalent:** `hostname`
 
 ### Usage:
+
 ```bash
 hostname
 ```
 
 ### Output:
+
 ```
 Dhairyas-MacBook-Air.local
 ```
@@ -117,11 +135,13 @@ Dhairyas-MacBook-Air.local
 **macOS Equivalent:** `system_profiler SPSoftwareDataType SPHardwareDataType`
 
 ### Usage:
+
 ```bash
 system_profiler SPSoftwareDataType SPHardwareDataType
 ```
 
 ### Output:
+
 ```
 Software:
 
@@ -163,11 +183,13 @@ Hardware:
 **macOS Equivalent:** `nslookup google.com`
 
 ### Usage:
+
 ```bash
 nslookup google.com
 ```
 
 ### Output:
+
 ```
 Server:		10.20.1.1
 Address:	10.20.1.1#53
@@ -185,11 +207,13 @@ Address: 142.250.207.174
 **macOS Equivalent:** `traceroute google.com`
 
 ### Usage:
+
 ```bash
 traceroute -m 10 google.com
 ```
 
 ### Output:
+
 ```
 traceroute to google.com (142.250.192.110), 10 hops max, 40 byte packets
  1  10.20.1.1 (10.20.1.1)  6.015 ms  4.324 ms  3.846 ms
@@ -215,34 +239,36 @@ traceroute to google.com (142.250.192.110), 10 hops max, 40 byte packets
 **macOS Equivalent:** `netstat -rn`
 
 ### Usage:
+
 ```bash
 netstat -rn
 ```
 
 ### Output (truncated for readability):
+
 ```
 Routing tables
 
 Internet:
 Destination        Gateway            Flags               Netif Expire
-default            10.20.1.1          UGScg                 en0       
+default            10.20.1.1          UGScg                 en0
 10.20/16           link#11            UCS                   en0      !
 10.20.1.1/32       link#11            UCS                   en0      !
 10.20.1.1          7c:5a:1c:ce:2f:57  UHLWIir               en0   1200
 10.20.64.246/32    link#11            UCS                   en0      !
-10.20.64.246       74:e:a4:8d:42:2b   UHLWI                 lo0       
-127                127.0.0.1          UCS                   lo0       
-127.0.0.1          127.0.0.1          UH                    lo0       
+10.20.64.246       74:e:a4:8d:42:2b   UHLWI                 lo0
+127                127.0.0.1          UCS                   lo0
+127.0.0.1          127.0.0.1          UH                    lo0
 224.0.0/4          link#11            UmCS                  en0      !
-224.0.0.251        1:0:5e:0:0:fb      UHmLWI                en0       
+224.0.0.251        1:0:5e:0:0:fb      UHmLWI                en0
 255.255.255.255/32 link#11            UCS                   en0      !
 
 Internet6:
 Destination                             Gateway                                 Flags               Netif Expire
-default                                 fe80::%utun0                            UGcIg               utun0       
-::1                                     ::1                                     UHL                   lo0       
-fe80::%lo0/64                           fe80::1%lo0                             UcI                   lo0       
-fe80::1%lo0                             link#1                                  UHLI                  lo0       
+default                                 fe80::%utun0                            UGcIg               utun0
+::1                                     ::1                                     UHL                   lo0
+fe80::%lo0/64                           fe80::1%lo0                             UcI                   lo0
+fe80::1%lo0                             link#1                                  UHLI                  lo0
 ```
 
 ---
@@ -253,6 +279,7 @@ fe80::1%lo0                             link#1                                  
 **macOS Alternative:** `mtr google.com` (requires installation) or combination of traceroute and ping
 
 ### Using built-in tools:
+
 ```bash
 # First trace the route
 traceroute google.com
@@ -261,6 +288,7 @@ ping -c 4 10.20.1.1
 ```
 
 ### Dummy pathping-style output:
+
 ```
 Tracing route to google.com [142.250.192.110] over a maximum of 10 hops:
 
@@ -296,11 +324,13 @@ Hop  RTT    Lost/Sent = Pct  Lost/Sent = Pct  Address
 **macOS Equivalent:** `arp -a`
 
 ### Usage:
+
 ```bash
 arp -a
 ```
 
 ### Output (truncated for readability):
+
 ```
 ? (10.20.1.1) at 7c:5a:1c:ce:2f:57 on en0 ifscope [ethernet]
 ? (10.20.4.16) at bc:f:f3:6a:7:6b on en0 ifscope [ethernet]
@@ -322,19 +352,19 @@ mdns.mcast.net (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet
 
 ## Command Comparison Summary
 
-| Windows Command | macOS Equivalent | Purpose |
-|----------------|------------------|----------|
-| `ipconfig` | `ifconfig` | Display network configuration |
-| `ipconfig /all` | `ifconfig -a` | Display all network interfaces |
-| `ping` | `ping -c <count>` | Test network connectivity |
-| `getmac` | `ifconfig \| grep ether` | Display MAC addresses |
-| `hostname` | `hostname` | Display computer name |
-| `systeminfo` | `system_profiler` | Display system information |
-| `nslookup` | `nslookup` or `dig` | DNS lookup |
-| `tracert` | `traceroute` | Trace network path |
-| `netstat` | `netstat` | Display network statistics |
-| `pathping` | `mtr` (needs install) | Combined ping and traceroute |
-| `arp -a` | `arp -a` | Display ARP table |
+| Windows Command | macOS Equivalent         | Purpose                        |
+| --------------- | ------------------------ | ------------------------------ |
+| `ipconfig`      | `ifconfig`               | Display network configuration  |
+| `ipconfig /all` | `ifconfig -a`            | Display all network interfaces |
+| `ping`          | `ping -c <count>`        | Test network connectivity      |
+| `getmac`        | `ifconfig \| grep ether` | Display MAC addresses          |
+| `hostname`      | `hostname`               | Display computer name          |
+| `systeminfo`    | `system_profiler`        | Display system information     |
+| `nslookup`      | `nslookup` or `dig`      | DNS lookup                     |
+| `tracert`       | `traceroute`             | Trace network path             |
+| `netstat`       | `netstat`                | Display network statistics     |
+| `pathping`      | `mtr` (needs install)    | Combined ping and traceroute   |
+| `arp -a`        | `arp -a`                 | Display ARP table              |
 
 ---
 
@@ -350,5 +380,7 @@ mdns.mcast.net (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet
 
 ---
 
-*Generated on: 2025-06-05 | Machine: Dhairya's MacBook Air (Apple M1)*
-
+**Student Name:** Dhairya Adroja  
+**Enrollment No:** 24010101602  
+**Course:** B.Tech. CSE  
+**Date:** 05 June 2025

@@ -1,6 +1,14 @@
-# Cisco Packet Tracer: Basic Terminal Commands Cheat Sheet
+# Lab Reference: Cisco Packet Tracer Commands and VLAN Configuration
 
-This guide covers essential Cisco Packet Tracer commands for configuring switches and VLANs, with explanations and a sample topology.
+**Student Name:** Dhairya Adroja  
+**Enrollment No:** 24010101602  
+**Course:** B.Tech. CSE
+
+---
+
+## Objective
+
+This reference guide covers essential Cisco Packet Tracer commands for configuring switches and VLANs, providing a comprehensive command reference for network configuration tasks.
 
 ---
 
@@ -72,8 +80,17 @@ interface FastEthernet 0/2
 
 ---
 
-## Notes
+## Notes and Best Practices
 
-- Replace interface numbers as per your topology.
-- Use `show vlan brief` to verify VLAN configuration.
-- Use `show running-config` to see the current configuration.
+- Replace interface numbers as per your topology
+- Use `show vlan brief` to verify VLAN configuration
+- Use `show running-config` to see the current configuration
+- Always save configuration using `copy running-config startup-config`
+- Use `no shutdown` to enable interfaces if they are administratively down
+
+---
+
+**Student Name:** Dhairya Adroja  
+**Enrollment No:** 24010101602  
+**Course:** B.Tech. CSE  
+**Date:** 02 July 2025

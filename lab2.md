@@ -1,4 +1,16 @@
-# Network Devices: Differences and Working Principles
+# Lab Practical #02: Network Devices - Differences and Working Principles
+
+**Student Name:** Dhairya Adroja  
+**Enrollment No:** 24010101602  
+**Course:** B.Tech. CSE
+
+---
+
+## Objective
+
+To understand the differences between various network devices (Hub, Switch, Router, Gateway) and study their working principles in computer networks.
+
+---
 
 ## Differences Between Network Devices
 
@@ -77,3 +89,12 @@
 - **Network Entry/Exit Point:** A gateway acts as the entry and exit point for a network, allowing traffic to flow in and out of the network and communicate with external networks.
 - **Application Layer Functionality:** While routers primarily operate at the network layer, gateways can operate at any layer of the OSI model, often at the application layer, to perform more complex protocol conversions.
 - **Example:** A typical home router acts as a gateway, translating private IP addresses within your home network to a public IP address used on the internet via Network Address Translation (NAT).
+
+---
+
+---
+
+**Student Name:** Dhairya Adroja  
+**Enrollment No:** 24010101602  
+**Course:** B.Tech. CSE  
+**Date:** 12 June 2025
