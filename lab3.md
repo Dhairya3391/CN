@@ -6,15 +6,19 @@
 
 ---
 
-## Objective
+## Aim/Objective
 
 Study of different types of network cables & connectors and crimping a LAN cable including understanding the difference between guided and unguided media, and learning cable wiring standards.
 
----
+## Theory
 
-## 1. Various Network Cables and Connectors
+Network cables are the physical medium that carries data between network devices. Different types of cables have varying characteristics in terms of bandwidth, distance, cost, and interference immunity. Understanding cable types and wiring standards is essential for network installation and maintenance.
 
-### a) Twisted Pair Cable
+## Procedure
+
+### 1. Various Network Cables and Connectors
+
+#### a) Twisted Pair Cable
 
 **Description:** Pairs of insulated copper wires twisted together to reduce electromagnetic interference. Most common in LANs.
 
@@ -23,7 +27,7 @@ Study of different types of network cables & connectors and crimping a LAN cable
 - **Connector:** RJ45
 - **Categories:** Cat5e (1 Gbps), Cat6 (10 Gbps), Cat6a (10 Gbps)
 
-### b) Coaxial Cable
+#### b) Coaxial Cable
 
 **Description:** Central copper conductor surrounded by insulating layer, metallic shield, and outer jacket.
 
@@ -31,7 +35,7 @@ Study of different types of network cables & connectors and crimping a LAN cable
 - **Connector:** BNC, N-type
 - **Applications:** Cable TV, internet, CCTV
 
-### c) Fiber Optic Cable
+#### c) Fiber Optic Cable
 
 **Description:** Transmits data using light signals through glass/plastic fibers.
 
@@ -40,7 +44,7 @@ Study of different types of network cables & connectors and crimping a LAN cable
 - **Connectors:** SC, LC, ST, FC
 - **Advantages:** High bandwidth, immune to EMI
 
-### d) Ethernet Cable
+#### d) Ethernet Cable
 
 **Description:** Twisted pair cable with RJ45 connectors for Ethernet networks.
 
@@ -48,7 +52,7 @@ Study of different types of network cables & connectors and crimping a LAN cable
 
 ---
 
-## 2. Difference Between Guided and Unguided Media
+### 2. Difference Between Guided and Unguided Media
 
 | Aspect           | Guided Media                        | Unguided Media                    |
 | ---------------- | ----------------------------------- | --------------------------------- |
@@ -61,9 +65,9 @@ Study of different types of network cables & connectors and crimping a LAN cable
 
 ---
 
-## 3. Cable Wiring Diagrams (Color Code)
+### 3. Cable Wiring Diagrams (Color Code)
 
-### a) Cross-wired Cable (Crossover)
+#### a) Cross-wired Cable (Crossover)
 
 Used to connect similar devices (computer to computer, switch to switch).
 
@@ -89,7 +93,7 @@ Used to connect similar devices (computer to computer, switch to switch).
 7. White/Brown
 8. Brown
 
-### b) Straight Through Cable
+#### b) Straight Through Cable
 
 Used to connect different devices (computer to switch, computer to hub).
 Both ends use the same standard (T568B).
@@ -107,7 +111,7 @@ Both ends use the same standard (T568B).
 
 ---
 
-## 4. Cable Applications
+### 4. Cable Applications
 
 | Cable Type       | Primary Use               | Advantages                        | Disadvantages                  |
 | ---------------- | ------------------------- | --------------------------------- | ------------------------------ |
@@ -118,7 +122,7 @@ Both ends use the same standard (T568B).
 
 ---
 
-## 5. Crimping Procedure
+### 5. Crimping Procedure
 
 ### Tools Required:
 

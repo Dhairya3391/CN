@@ -6,11 +6,17 @@
 
 ---
 
-## Objective
+## Aim/Objective
 
 To study and practice various network commands used in different operating systems, particularly focusing on Windows commands and their macOS equivalents, with practical output examples.
 
-## 1. IP Configuration (ipconfig → ifconfig)
+## Theory
+
+Network commands are essential tools for network administrators and users to diagnose, configure, and troubleshoot network connectivity. Different operating systems provide various commands with similar functionality but different syntax and options.
+
+## Procedure
+
+### 1. IP Configuration (ipconfig → ifconfig)
 
 **Windows Command:** `ipconfig`  
 **macOS Equivalent:** `ifconfig`
@@ -365,18 +371,6 @@ mdns.mcast.net (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet
 | `netstat`       | `netstat`                | Display network statistics     |
 | `pathping`      | `mtr` (needs install)    | Combined ping and traceroute   |
 | `arp -a`        | `arp -a`                 | Display ARP table              |
-
----
-
-## Additional Useful macOS Network Commands
-
-- `networksetup -listallhardwareports` - List all network interfaces
-- `dscacheutil -q host -a name google.com` - DNS lookup (alternative)
-- `dig google.com` - Advanced DNS lookup
-- `route -n get default` - Show default route
-- `lsof -i` - Show network connections
-- `netstat -an` - Show all network connections
-- `sudo netstat -tulpn` - Show listening ports with processes
 
 ---
 

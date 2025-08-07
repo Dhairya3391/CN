@@ -6,15 +6,19 @@
 
 ---
 
-## Objective
+## Aim/Objective
 
 To understand the differences between various network devices (Hub, Switch, Router, Gateway) and study their working principles in computer networks.
 
----
+## Theory
 
-## Differences Between Network Devices
+Network devices are hardware components that facilitate communication between different network segments. Each device operates at specific layers of the OSI model and serves distinct purposes in network infrastructure.
 
-### 1. Hub vs. Switch
+## Procedure
+
+### 1. Differences Between Network Devices
+
+#### a) Hub vs. Switch
 
 - **Hub:**
 
@@ -31,7 +35,7 @@ To understand the differences between various network devices (Hub, Switch, Rout
   - More intelligent and generally more expensive than hubs.
   - Commonly used in modern LANs to connect multiple devices efficiently.
 
-### 2. Switch vs. Router
+#### b) Switch vs. Router
 
 - **Switch:**
 
@@ -49,7 +53,7 @@ To understand the differences between various network devices (Hub, Switch, Rout
   - Typically has fewer ports than a switch (e.g., 2, 4, 8) but can connect to high-speed WAN links.
   - Responsible for forwarding packets between different IP networks.
 
-### 3. Router vs. Gateway
+#### c) Router vs. Gateway
 
 - **Router:**
 
@@ -64,9 +68,9 @@ To understand the differences between various network devices (Hub, Switch, Rout
   - Can be a router, firewall, server, or any device that facilitates data flow between disparate networks.
   - Essentially, a router is a _type_ of gateway (specifically, a gateway for IP-based networks), but not all gateways are routers.
 
-## Working of Network Devices
+### 2. Working of Network Devices
 
-### 1. Switch
+#### a) Switch
 
 - **Learning MAC Addresses:** When a device sends data through a switch, the switch records the device's MAC address and the port it came from in its MAC address table (CAM table).
 - **Frame Forwarding:** When a switch receives a data frame, it examines the destination MAC address. It then looks up this MAC address in its MAC address table.
@@ -74,7 +78,7 @@ To understand the differences between various network devices (Hub, Switch, Rout
   - If the destination MAC address is not found (e.g., for a broadcast or an unknown MAC address), the switch floods the frame out of all ports (except the incoming port) until the destination is learned.
 - **Collision Domains:** Each port on a switch creates its own collision domain, meaning devices connected to different ports can transmit simultaneously without collisions, significantly improving network performance.
 
-### 2. Router
+#### b) Router
 
 - **Packet Forwarding (Routing):** When a router receives an IP packet, it examines the destination IP address.
 - **Routing Table Lookup:** The router consults its routing table, which contains information about network paths, including which interface to use to reach specific network destinations and the "next hop" router (if any).
@@ -83,14 +87,12 @@ To understand the differences between various network devices (Hub, Switch, Rout
   - If the destination network is not directly connected, the router forwards the packet to the next router in the path (the "next hop") as determined by its routing table.
 - **Inter-network Communication:** Routers are crucial for connecting different networks and enabling communication across the internet, making decisions on the best path for data to travel.
 
-### 3. Gateway
+#### c) Gateway
 
 - **Protocol Translation:** The primary function of a gateway is to translate protocols between two different networks. For example, a gateway might translate data from an Ethernet network to a Frame Relay network.
 - **Network Entry/Exit Point:** A gateway acts as the entry and exit point for a network, allowing traffic to flow in and out of the network and communicate with external networks.
 - **Application Layer Functionality:** While routers primarily operate at the network layer, gateways can operate at any layer of the OSI model, often at the application layer, to perform more complex protocol conversions.
 - **Example:** A typical home router acts as a gateway, translating private IP addresses within your home network to a public IP address used on the internet via Network Address Translation (NAT).
-
----
 
 ---
 
