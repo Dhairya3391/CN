@@ -1,0 +1,41 @@
+Lab Practical #07:  
+Study the application layer protocol DNS, DHCP, FTP.
+Practical Assignment #07:
+
+1. Implement the application layer protocol DNS, DHCP, and FTP. Also check connectivity between them using ping command or PDU utility.
+   Instructions:
+1. Protocol-wise configuration setup screenshot.
+1. Mention IP address of each pc as label.
+1. Ping command or PDU screenshot between two pcs.
+
+1
+
+| B.Tech. CSE
+
+Enrollment No: - 18054X107XXX
+
+Lab Practical #8:  
+Study & Survey of Institute organization network infrastructure.
+Practical Assignment #8:
+
+1. Identify type of network in your institute. Draw a design of network in your institute (Any Lab/Floor/Building).
+2. List how many network devices and types of cable used and give its details.
+
+1
+
+| B.Tech. CSE
+
+Enrollment No: - 18054X107XXX
+
+Lab Practical #09:  
+Study Packet capture and header analysis by Wireshark (HTTP, TCP, UDP, IP, etc.)
+Practical Assignment #09:
+
+1. Explain usage of Wireshark tool.
+2. Packet capture and header analysis by Wireshark (HTTP, TCP, UDP, IP, etc.)
+
+1
+
+| B.Tech. CSE
+
+Enrollment No: - 18054X107XXX
