@@ -1,41 +1,26 @@
-Lab Practical #07:  
-Study the application layer protocol DNS, DHCP, FTP.
-Practical Assignment #07:
-
-1. Implement the application layer protocol DNS, DHCP, and FTP. Also check connectivity between them using ping command or PDU utility.
-   Instructions:
-1. Protocol-wise configuration setup screenshot.
-1. Mention IP address of each pc as label.
-1. Ping command or PDU screenshot between two pcs.
-
-1
-
-| B.Tech. CSE
-
-Enrollment No: - 18054X107XXX
-
-Lab Practical #8:  
-Study & Survey of Institute organization network infrastructure.
-Practical Assignment #8:
-
-1. Identify type of network in your institute. Draw a design of network in your institute (Any Lab/Floor/Building).
-2. List how many network devices and types of cable used and give its details.
-
-1
-
-| B.Tech. CSE
-
-Enrollment No: - 18054X107XXX
-
-Lab Practical #09:  
-Study Packet capture and header analysis by Wireshark (HTTP, TCP, UDP, IP, etc.)
-Practical Assignment #09:
-
-1. Explain usage of Wireshark tool.
-2. Packet capture and header analysis by Wireshark (HTTP, TCP, UDP, IP, etc.)
-
-1
-
-| B.Tech. CSE
-
-Enrollment No: - 18054X107XXX
+Lab Practical #10:
+Study of IP Addressing and sub-netting.
+Practical Assignment #10:
+1. Find default subnet masks, network bits, host bits, hosts per subnet, no of
+subnets, subnet number, 1st valid IP address, last valid IP address, and broadcast
+address.
+i. 8.1.4.5/16
+ii. 130.4.102.1/24
+iii. 130.4.102.1/22
+iv. 199.1.1.100/27
+2. A host in a class C network has been assigned an IP address 192.168.17.9. Find
+the number of addresses in the block, the first address, and the last address.
+3. An address in a block is given as 185.28.17.9. Find the number of addresses in the
+block, the first address, and the last address.
+4. A block of addresses is granted to a small organization. We know that one of the
+addresses is 205.16.37.39/28. What is the first address, last address, number of
+addresses in a block?
+5. Subnet the IP address 216.21.5.0 into 30 hosts in each subnet. Find Class, Default
+Mask, subnet mask, Bit Borrowed, New subnet mask, No. of Hosts & Subnet,
+Network Ranges (Subnets).
+6. Subnet the IP address 192.10.20.0 into 52 hosts in each subnet. Find Class,
+Default Mask, Bit Borrowed, New subnet mask, No. of Hosts & Subnet, Network
+Ranges (Subnets).
+7. Determining the Subnet mask for Devices A and B:
+a) Device A: 172.16.17.30/20
+b) Device B: 172.16.28.15/20
